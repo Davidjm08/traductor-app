@@ -1,0 +1,159 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+  background: radial-gradient(circle at top, #1b1b1b, #0d0d0d);
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(25, 25, 25, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ======== TÍTULOS ======== */
+h1 {
+  text-align: center;
+  color: #00bfff;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #ffc107;
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* ======== FORMULARIO ======== */
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input {
+  background: #222;
+  border: 1px solid #333;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 8px;
+  width: 180px;
+  transition: all 0.2s;
+}
+
+input:focus {
+  border-color: #00bfff;
+  outline: none;
+  box-shadow: 0 0 5px #00bfff;
+}
+
+/* ======== BOTONES ======== */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.primary {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+button.primary:hover {
+  background-color: #0099cc;
+}
+
+button.edit {
+  background-color: #1e90ff;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #0077e6;
+}
+
+button.delete {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #e64545;
+}
+
+/* ======== LISTA DE PALABRAS ======== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #1f1f1f;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+}
+
+li span b {
+  color: #ffffff;
+}
+
+.translation {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ======== ÁREA DE TEXTO ======== */
+textarea {
+  width: 80%;
+  min-height: 80px;
+  background: #222;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  resize: none;
+  transition: all 0.2s;
+}
+
+textarea:focus {
+  border-color: #00bfff;
+  outline: none;
+  box-shadow: 0 0 10px #00bfff;
+}
+
+/* ======== RESULTADO ======== */
+.resultado {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #00bfff;
+  text-align: center;
+}
